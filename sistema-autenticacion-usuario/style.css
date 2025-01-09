@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+}
+.container {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.container h3{
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+.container-form {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem #ccc;
+    padding: 1rem;
+    width: 100%;
+}
+.container-form > form > div{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.container-form > form > div > input{
+    width: 100%;
+    padding: 0.3rem;
+}
+.container-form > form > input{
+    width: 100%;
+    padding: 0.5rem;
+}
+.container-form > form > span{
+    display: block;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.other{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
