@@ -8,6 +8,18 @@ if (isset($_POST["username"]) && isset($_POST["password"]) ) {
         $errors = "usuario o contraseña incorrecto";
     };
 
+    if ($errors == null){
+        require_once '../controllers/LoginController.php';
+        $loginController = new LoginController();
+        $isAuthenticate = $loginController->login($username, $password);
+        if ($isAuthenticate){
+            session_start();
+            $_SESSION['isAuthenticate'] = true;
+            return header('location: index.php');
+        }else{
+            $errors = "usuario o contraseña incorrecto";
+        }
+    }
 }
 
 ?>

@@ -3,7 +3,7 @@
 define('DB_SERVER', 'localhost');
 define('DB_PORT', 3306);
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'admin');
 define('DB_NAME', 'system_authenticate_db');
 
 class DBConnection{
